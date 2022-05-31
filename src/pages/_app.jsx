@@ -1,9 +1,9 @@
-import "../styles/globals-style.js";
-import { theme } from "../styles/theme";
+import { ThemeProvider } from 'styled-components';
+import { theme } from '../styles/theme';
+import { AppProps } from 'next/app';
 
 function MyApp({ Component, pageProps }) {
   return (
-    // eslint-disable-next-line react/jsx-no-undef
     <ThemeProvider theme={theme}>
       <Component {...pageProps} />
     </ThemeProvider>
@@ -11,3 +11,5 @@ function MyApp({ Component, pageProps }) {
 }
 
 export default MyApp;
+
+MyApp.propTypes = AppProps;
