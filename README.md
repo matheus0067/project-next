@@ -2,6 +2,7 @@
 
 ## Bibliotecas e Ferramentas:
  - React
+ - React Router DOM
  - Styled Components
  - Storybook
  - Jest
